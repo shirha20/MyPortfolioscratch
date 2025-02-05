@@ -84,6 +84,7 @@ nav ul li a {
     width: 400px;
     height: auto;
     border-radius: 50%;
+
 }
 
 @media (max-width: 768px) {
@@ -99,7 +100,10 @@ nav ul li a {
 
     .hero-image img {
         width: 90%;
+       
         max-width: 250px;
+        box-shadow: 0 4px 10px rgba(111, 6, 159, 0.2);
+        
     }
 
    
