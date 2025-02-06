@@ -5,11 +5,61 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 body {
-    background-color: #1a1a1a;
+    
+   background-color: #1a1a1a;
     color: white;
+    margin: 0;
+    height: 600vh;    
+    font-family: 'Poppins', sans-serif;
+     background: linear-gradient(135deg, #0f172a, #1e293b);
+     overflow: hidden;
 }
+.glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        padding: 40px;
+        border-radius: 15px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+.background::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    top: 10%;
+    left: 15%;
+    animation: float 1.5s infinite ease-in-out alternate;
+}
+.background::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    bottom: 10%;
+    right: 20%;
+    animation: float 1.5s infinite ease-in-out alternate;
+}
+@keyframes float {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+
 
 header {
     display: flex;
@@ -101,9 +151,7 @@ nav ul li a {
     .hero-image img {
         width: 90%;
        
-        max-width: 250px;
-        box-shadow: 0 4px 10px rgba(111, 6, 159, 0.2);
-        
+        max-width: 250px;        
     }
 
    
@@ -246,12 +294,13 @@ nav ul li a {
 
 .contact-info {
     background-color: #180566;
-    padding: 2rem;
-    border-radius: 80px;
-    box-shadow: 0 0 10px rgba(40, 3, 55, 0.1);
-    max-width: 600px;
+    padding: 150px;
+    border-radius: 280px;
+    box-shadow: 0 30px 20px rgba(61, 153, 223, 0.597);
+    max-width: 500px;
     margin: 2rem auto;
     text-align: center;
+
 }
 
 .contact-info h2 {
@@ -280,6 +329,5 @@ nav ul li a {
 .contact-icons a:nth-child(3):hover {
     color: #d44638; 
 }
-
 
 
